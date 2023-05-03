@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jane Doe | Globo - Mi Perfil</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header> <!--- Inicio Header --->
+        <nav class="navbar container">
+            <picture class="navbar_logo">
+                <a href="index.html" target="_blank">
+                <img src="img/logo.png" alt="Logo de Globo">
+            </a>
+            </picture>
+            <ul class="navbar_usuario">
+                <input class="navbar_usuario_boton" id="nombreUsuario" type="text" placeholder="Ingresa tu usuario...">
+            </ul>
+        </nav>
+    </header><!--- Fin Header --->
+    <main>
+        <section class="perfil container">
+            <picture class="perfil_foto">
+                <img src="img/foto_perfil.jpg" alt="Foto de perfil Jane Doe">
+            </picture>
+                <article class="perfil_datos">
+                    <h3>Jane Doe</h3>
+                    <p><span>Email:</span> jane_doe@email.com</p>
+                    <p><span>Fecha de Nacimiento:</span> 01/05/1996</p>
+                    <p><span>Teléfono:</span> 918-936-9585</p>
+                    <p><span>Ciudad:</span> Tokyo, Japón</p>
+                    <p class="trabajo">Trabajando en <span>Lawn N</span></p>
+                </article>
+                <button class="perfil_btn" id="btnSeguir" onclick="BtnSeguir()">Seguir</button>
+        </section>
+        <section class="contenido container">
+            <article class="publicacion">
+                    <p class="publicacion_tiempo">Publicado hace 1 semana</p>
+                <picture class="publicación_foto">
+                    <img src="img/foto_publicacion.jpg" alt="Foto de publicación de Jane Doe">
+                </picture>
+                <article class="publicacion_megustaylikes">
+                    <button class="publicacion_btn" id="btnMeGusta" onclick="BtnMeGusta()">Me Gusta</button>
+                    <p id="likes" class="publicacion_cantidad">200</p>
+                    <p class="publicacion_likes">Likes</p>
+                </article>
+                <article class="publicacion_comentarios">
+                    <h1>Comentarios</h1>
+                    <p><span>Juan Perez: </span>  ¡Wow esa foto de Tokio es impresionante!</p>
+                    <p><span>Kathleen J Rennie: </span>  ¡Esa foto de Tokio es simplemente espectacular! Me trae tantos recuerdos.</p>
+                    <p><span>Diana Bell: </span>  ¡Espero que algún día pueda ver Tokio en persona!</p> 
+                </article>
+                <ul class="lista_de_comentarios" id="lista_comentarios"></ul>
+                <article class="publicacion_comentarios_agregar">
+                    <textarea name="comentario" class="texto_comentario" id="comentario" placeholder="Deja tu comentario..."></textarea>
+                    <button class="publicacion_comentarios_btn" id="btnComentarios">Comentar</button>
+                </article>
+            </article>
+            <article class="about">
+                <h3>Sobre mí</h3>
+                <p>¡Hola a todos! Soy Jane, y actualmente vivo en la vibrante y emocionante ciudad de Tokio, Japón. Me encanta capturar la esencia de la vida urbana a través de mi lente, explorando el contraste entre la arquitectura moderna y las tradiciones centenarias que conviven en esta metrópolis única. Desde rascacielos deslumbrante y calles bulliciosas hasta templos serenos y jardines tranquilos, encuentro inspiración en cada rincón de esta increíble ciudad.</p>
+            </article>
+        </section>
+    </main>
+    <footer class="footer">
+        <p> © Globo - Copyright 2023 - Todos los derechos reservados</p>
+        <p>San Francisco, Córdoba</p>
+    </footer>
+    <script src="javascript.js"></script>
+</body>
+</html>
